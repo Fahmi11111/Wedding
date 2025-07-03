@@ -21,12 +21,15 @@ body {
   background-size: cover;
   background-position: center;
   z-index: -1;
-  filter: grayscale();
 }
 
 .hero {
   position: relative;
   min-height: 100vh;
+}
+
+.hero main {
+  padding: 0 1rem;
 }
 
 .hero h1,
@@ -61,47 +64,29 @@ body {
 
 .mynavbar {
   background-color: rgba(255, 255, 255, 0.3) !important;
-  backdrop-filter: blur(3px);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease-in-out;
-  padding: 10px 16px;
-  z-index: 999;
-}
-
-.mynavbar .offcanvas {
-  height: 100vh;
-  background-color: rgba(255, 255, 255, 0.95);
-  transition: 0.3s ease-in-out;
+  backdrop-filter: blur(4px);
 }
 
 .mynavbar .navbar-brand,
 .mynavbar .offcanvas-title {
   font-family: "Sacramento", cursive;
-  font-size: 2.8rem;
+  font-size: 3rem;
   font-weight: bold;
-  color: #d63384; /* Pink elegan */
-  letter-spacing: 1px;
 }
 
 .mynavbar .nav-link {
   text-transform: uppercase;
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: #333;
-  letter-spacing: 0.5px;
-  padding: 8px 12px;
-  transition: 0.2s;
 }
 
-.mynavbar .nav-link:hover {
-  color: #d63384;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
+.mynavbar .offcanvas {
+  height: 100vh;
+}
+
+.offcanvas {
+  z-index: 1055;
 }
 
 .home {
-  background-image: url(img/bg.png);
-  background-size: cover;
   min-height: 100vh;
   margin-top: -6rem;
   padding-top: 15rem;
@@ -163,24 +148,24 @@ body {
 }
 
 .info {
-  background-color: var(--bg);
-  color: white;
+  background-color: #f5f5f5;
+  color: black;
   padding-top: 10rem;
   padding-bottom: 8rem;
 }
 
 .info .alamat {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
 }
 
 .info .description {
-  font-size: 1rem;
-  font-weight: 300;
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
 .info .card {
   background-color: rgba(255, 255, 255, 0.2) !important;
-  color: white !important;
+  color: black !important;
   border: 1px solid #999;
 }
 
@@ -191,13 +176,13 @@ body {
 }
 
 .info .card-body {
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 .info .card-footer {
   border-top: 1px solid #999;
-  font-size: 0.9rem;
-  font-weight: 300;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .story,
@@ -206,6 +191,10 @@ body {
 .gifts {
   padding-top: 10rem;
   padding-bottom: 8rem;
+}
+
+.gifts {
+  background-color: #fce4ec;
 }
 
 .story span,
@@ -223,8 +212,8 @@ body {
 .gallery p,
 .rsvp p,
 .gifts p {
-  font-size: 1rem;
-  font-weight: 300;
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
 .timeline {
@@ -329,15 +318,19 @@ body {
 }
 
 .rsvp {
-  background-color: var(--bg);
+  background-image: url(img/6.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .rsvp h2 {
-  font-size: 4.5rem;
+  font-size: 5rem;
 }
 
 .rsvp p {
   color: white;
+  font-size: 5rem;
+  font-weight: 600;
 }
 
 .rsvp form label {
@@ -475,7 +468,7 @@ footer li {
   }
 
   .sticky-top {
-    overflow: hidden;
+    /* overflow: hidden;  ← hapus ini */
   }
 
   .timeline li .timeline-image {
