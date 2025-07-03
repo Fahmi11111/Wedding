@@ -468,7 +468,7 @@ footer li {
   }
 
   .sticky-top {
-    /* overflow: hidden;  ← hapus ini */
+    overflow: hidden;
   }
 
   .timeline li .timeline-image {
